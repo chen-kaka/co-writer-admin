@@ -1,5 +1,21 @@
 module.exports = [
   {
+    key: 'repos',
+    name: 'Repository',
+    icon: 'camera-o',
+    clickable:false,
+    child:[
+      {
+        key: 'repo',
+        name: 'Repository',
+      },
+      {
+        key: 'repo_node',
+        name: 'RepoNodes',
+      },
+    ]
+  },
+  {
     key: 'dashboard',
     name: '仪表盘',
     icon: 'laptop'

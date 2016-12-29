@@ -11,7 +11,7 @@ let dataKey = mockStorge('AdminUsers',[
     password: 'guest'
   },
   {
-    username: '吴彦祖',
+    username: 'chen-kaka',
     password: '123456'
   }
 ])
