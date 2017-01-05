@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react'
 import { routerRedux } from 'dva/router'
 import { connect } from 'dva'
-import UserList from '../components/repo/list'
-import UserSearch from '../components/repo/search'
-import UserModal from '../components/repo/modal'
+import UserList from '../components/users/list'
+import UserSearch from '../components/users/search'
+import UserModal from '../components/users/modal'
 
 function Users({ location, dispatch, users }) {
   const {

@@ -38,8 +38,8 @@
     "watchjs": "^0.0.0"
   },
   "scripts": {
-    "start": "dora --plugins \"proxy,webpack,webpack-hmr\"",
-    "dev": "dora --plugins \"webpack,webpack-hmr\"",
+    "start": "dora -p 9000 --plugins \"webpack,webpack-hmr\"",
+    "dev": "dora -p 9000 --plugins \"webpack,webpack-hmr\"",
     "lint": "eslint --fix --ext .js,.jsx src/components/layout",
     "build": "atool-build"
   },

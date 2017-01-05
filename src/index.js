@@ -9,6 +9,7 @@ app.model(require('./models/app'))
 app.model(require('./models/users'))
 app.model(require('./models/dashboard'))
 app.model(require('./models/repo'))
+app.model(require('./models/repo_node'))
 
 // 3. Router
 app.router(require('./router'))

@@ -6,6 +6,7 @@ import Dashboard from './routes/dashboard'
 import Users from './routes/users'
 import Ico from './routes/ui/ico'
 import Repositroy from './routes/repos/repo'
+import RepoNode from './routes/repos/repo_node'
 
 export default function ({ history }) {
   return (
@@ -13,6 +14,7 @@ export default function ({ history }) {
       <Route path="/" component={ App } >
         <IndexRedirect to="/dashboard" />
         <Route path="/repos/repo" component={ Repositroy }/>
+        <Route path="/repos/repo_node" component={RepoNode} />
         <Route path="dashboard" component={ Dashboard }/>
         <Route path="/users" component={ Users } />
         <Route path="/ui/ico" component={Ico}/>
