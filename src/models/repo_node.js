@@ -2,7 +2,7 @@
  * Created by kakachan on 16/12/30.
  */
 
-import { query } from '../services/repo_node';
+import { query, del } from '../services/repo_node';
 import { parse } from 'qs';
 
 export default {
@@ -56,6 +56,10 @@ export default {
           }
         })
       }
+    },
+
+    *'delete'({payload}, { call, put }){
+      const data = yield call(del, parse(payload));
     }
   },
 

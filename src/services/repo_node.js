@@ -10,3 +10,8 @@ export async function query( params ) {
     data: params
   })
 }
+
+export async function del( params ) {
+  alert("delete");
+  return {};
+}

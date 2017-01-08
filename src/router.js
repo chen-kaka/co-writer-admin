@@ -12,7 +12,7 @@ export default function ({ history }) {
   return (
     <Router history={ history }>
       <Route path="/" component={ App } >
-        <IndexRedirect to="/dashboard" />
+        <IndexRedirect to="/repos/repo" />
         <Route path="/repos/repo" component={ Repositroy }/>
         <Route path="/repos/repo_node" component={RepoNode} />
         <Route path="dashboard" component={ Dashboard }/>

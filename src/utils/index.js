@@ -1,6 +1,7 @@
 import config from './config'
 import menu from './menu'
 import request from './request'
+import request_fetch from './request_fetch'
 import classnames from 'classnames'
 import mockStorge from './mockStorge'
 import {color} from './theme'
@@ -44,6 +45,7 @@ module.exports = {
   config,
   menu,
   request,
+  request_fetch,
   color,
   classnames
 }
