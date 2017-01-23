@@ -30,7 +30,7 @@ const search = ({
   return (
     <div className={styles.normal}>
       <div className={styles.search}>
-        <Form inline onsubmit={handleSubmit}>
+        <Form inline onSubmit={handleSubmit}>
           <Form.Item>
             {
               getFieldDecorator('field',{

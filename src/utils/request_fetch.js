@@ -28,7 +28,7 @@ let handleError=(err)=>{
 
 export default (url, options)=>{
   message.loading('loading...', 1000);
-  return fetch(url, {...options,credentials:'same-origin'})
+  return fetch(url, {...options,credentials: 'include'})// 'same-origin'})
     .then(parseJSON)
     .catch((err)=>handleError(err))
 }
